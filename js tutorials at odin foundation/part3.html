@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let add7 = number => number + 7;
+        console.log(add7(10))
+
+        let multiply = ( x , y ) => x * y;
+        console.log(multiply(23, 36))
+
+        //capitalized
+        /* 
+        1. take a string
+        2. convert to uppercase, toUpperCase
+        3. remove empty spaces in front
+        4. access the 0 character and return it
+
+        chatGPT- const capitalized = inputString => inputString.charAt(0).toUpperCase();
+
+        */
+
+        let capitalized = inputString => {
+            let upperCase = inputString.toUpperCase(inputString);
+            let firstLetter = upperCase[0];
+            return(firstLetter)
+
+        };
+        console.log(capitalized("waruna"))
+
+        /*Last letter function
+        1. take a string
+        2. find the length
+        3. access the last letter and return.
+
+        chatGPT- const lastLetter = inputForLast => inputForLast.slice(-1);
+
+        */
+
+        let lastLetter = inputForLast => {
+            let length = inputForLast.length;
+            let lastIndex = length - 1;
+            let letter = inputForLast[lastIndex];
+            return(letter)
+        };
+
+        console.log(lastLetter("lankathilaka"))
+
+
+    </script>
+    
+</body>
+</html>

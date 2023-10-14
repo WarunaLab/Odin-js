@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /* FizzBuzz
+        Plan
+        No user interface an it is will run on browser consol
+        inputs will get from a pop up 
+
+
+
+        1. parseInt(prompt) function will take a number and save it in a variable
+        2. if it is not a number it will promt, not a number enter again.
+        3. if the number can devide by 3 without a reminder log fizz else print the number
+        4. if the number can devide by 5 without reminder log buzz else print the number
+        5. if the number can devide by 3 and 5 both print fizzbuzz or else print the number
+        6. 
+        */
+       let answer = parseInt(prompt("Enter a number you need to FizzBuzz upto"));
+      
+       for (let x = 1; x <=answer; x++) {
+            if (x % 3 === 0 && x % 5 === 0) {
+                console.log("FizzBuzz");
+            } else if (x % 3 === 0) {
+                console.log("Fizz");
+            } else if (x % 5 === 0) {
+                console.log("Buzz");
+            } else {
+                console.log(x);
+            }
+        }
+
+            
+       
+
+
+    
+    </script>
+    
+</body>
+</html>
